@@ -186,10 +186,10 @@ def infer_hand_from_cards(cards):
     # result = CLIENT.infer('temp.jpg', model_id="playing-cards-ow27d/4")
     # cards = [prediction['class'] for prediction in result['predictions']]
     
-    print("检测到的牌面:", cards)
+    print("檢測到的牌面:", cards)
     
     if not cards:
-        print("没有检测到信息")
+        print("没有檢測到信息")
         return
     
     hist, suits = get_histogram_and_suits(cards)
@@ -197,7 +197,7 @@ def infer_hand_from_cards(cards):
 
 def capture_and_process():
     cap = cv2.VideoCapture(0)
-    print("按下空白键进行辨识偵測，按下'q'退出...")
+    print("按下空白鍵信行辨識偵測，按下'q'退出...")
     while True:
         ret, frame = cap.read()
         cv2.imshow("Camera", frame)
