@@ -245,25 +245,25 @@ def is_royal_flush(hist, suits):
 
 def print_determine_hand_type(hist, suits):
     if is_royal_flush(hist, suits):
-        print("皇家同花顺")
+        print("皇家同花順")
     elif is_straight_flush(hist, suits):
-        print("同花顺")
+        print("同花順")
     elif is_four_of_a_kind(hist):
-        print("四条")
+        print("四條")
     elif is_full_house(hist):
-        print("葫芦")
+        print("葫蘆")
     elif is_flush(suits):
         print("同花")
     elif is_straight(hist):
-        print("顺子")
+        print("順子")
     elif is_three_of_a_kind(hist):
-        print("三条")
+        print("三條")
     elif is_two_pair(hist):
-        print("两对")
+        print("兩對")
     elif is_pair(hist):
-        print("一对")
+        print("對子")
     else:
-        print("高牌")
+        print("散排")
 
 
 
